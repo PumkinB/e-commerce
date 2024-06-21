@@ -19,7 +19,7 @@ const FormLogin = () => {
     login(data, (status, res) => {
       if (status) {
         localStorage.setItem("token", res);
-        window.location.href = "https://e-commerce-oliver.vercel.app/products";
+        window.location.href = "/products";
       } else {
         setLoginFailed(res.response.data);
       }
