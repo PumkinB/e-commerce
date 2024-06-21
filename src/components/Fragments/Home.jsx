@@ -18,7 +18,7 @@ const Home = () => {
         <p className="text-xl text-slate-700 mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam qui veniam quidem temporibus nemo, sint amet rem? Eos, iure?
         </p>
-        <Link to={"/products"} className="py-2 px-4 bg-indigo-600 text-white font-bold rounded text-lg">
+        <Link to={"./login"} className="py-2 px-4 bg-indigo-600 text-white font-bold rounded text-lg">
           Login
         </Link>
       </div>
