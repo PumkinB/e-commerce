@@ -33,7 +33,7 @@ const FormLogin = () => {
   }, []);
 
   return (
-    <form onSubmit={handleLogin}>
+    <form method="POST" onSubmit={handleLogin}>
       <InputForm label="Username" type="text" placeholder="Jhon Doe" name="username" ref={usernameRef} />
       <InputForm label="Password" type="password" placeholder="*****" name="password" />
       <Button classname="bg-indigo-600 w-full" type="submit">
