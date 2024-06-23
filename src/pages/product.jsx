@@ -35,7 +35,6 @@ const ProductsPage = () => {
         </div>
 
         <div className="w-full md:w-3/6 py-10 md:py-0">
-          <h1 className="text-3xl font-bold text-blue-600 ml-5 mb-2">Cart</h1>
           <TableCart products={products} />
         </div>
       </div>

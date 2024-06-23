@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   const [open, setOpen] = useState(false);
-  const username = useLogin();
+  // const username = useLogin();
   const [totalCart, setTotalCart] = useState(0);
   const cart = useSelector((state) => state.cart.data);
   const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
@@ -57,10 +57,10 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <div className={`mx-0 my-3 underline font-bold text-lg md:mx-3 md:my-0 ${isDarkMode ? "text-white" : "text-slate-700"}`}>{username}</div>
-          <Button classname={`${isDarkMode ? "bg-black" : "bg-indigo-600"} duration-0`} onClick={handleLogout}>
+          {/* <div className={`mx-0 my-3 underline font-bold text-lg md:mx-3 md:my-0 ${isDarkMode ? "text-white" : "text-slate-700"}`}>{username}</div> */}
+          {/* <Button classname={`${isDarkMode ? "bg-black" : "bg-indigo-600"} duration-0`} onClick={handleLogout}>
             Log Out
-          </Button>
+          </Button> */}
           <div className={`flex items-center p-2 rounded-md md:mx-5 my-2 text-lg py-2 px-3 text-white max-w-fit ${isDarkMode ? "bg-black" : "bg-indigo-600"}`}>
             Item: {totalCart} | Price: ${total}
           </div>

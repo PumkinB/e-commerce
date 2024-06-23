@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../Elements/Button/Button";
 import InputForm from "../Elements/input";
 import { login } from "../../services/auth.service";
+import { Link } from "react-router-dom";
 
 const FormLogin = () => {
   const [loginFailed, setLoginFailed] = useState("");
@@ -33,13 +34,18 @@ const FormLogin = () => {
   }, []);
 
   return (
-    <form method="GET" onSubmit={handleLogin}>
+    // onSubmit={handleLogin}
+    <form>
       <InputForm label="Username" type="text" placeholder="Jhon Doe" name="username" ref={usernameRef} />
       <InputForm label="Password" type="password" placeholder="*****" name="password" />
-      <Button classname="bg-indigo-600 w-full" type="submit">
+      {/* type="submit" */}
+      {/* <Button classname="bg-indigo-600 w-full" type="submit">
         Login
-      </Button>
-      {loginFailed && <p className="text-red-500 text-center mt-5">{loginFailed}</p>}
+      </Button> */}
+      <Link to={"/products"} className="bg-indigo-600 w-full text-white font-bold py-2 px-6 rounded active:translate-y-1">
+        Login
+      </Link>
+      {/* {loginFailed && <p className="text-red-500 text-center mt-5">{loginFailed}</p>} */}
     </form>
   );
 };
