@@ -62,7 +62,7 @@ const Navbar = () => {
             Log Out
           </Button> */}
           <div className={`flex items-center p-2 rounded-md md:mx-5 my-2 text-lg py-2 px-3 text-white max-w-fit ${isDarkMode ? "bg-black" : "bg-indigo-600"}`}>
-            Item: {totalCart} | Price: ${total}
+            Item: {totalCart} | Price: ${total.toLocaleString("id-ID", { styles: "currency", currency: "USD" })}
           </div>
           <Button classname={`${isDarkMode ? "bg-black" : "bg-indigo-600"} duration-0`} onClick={() => setIsDarkMode(!isDarkMode)}>
             {isDarkMode ? "Light" : "Dark"}

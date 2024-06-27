@@ -38,7 +38,7 @@ const TableCart = (props) => {
 
   return (
     <>
-      <div className="fixed">
+      <div className="md:sticky md:top-24">
         <h1 className="text-3xl font-bold text-blue-600 ml-5 mb-2">Cart</h1>
         <table className={`text-left table-auto border-separate border-spacing-x-5 ${isDarkMode && "text-white"}`}>
           <thead>
